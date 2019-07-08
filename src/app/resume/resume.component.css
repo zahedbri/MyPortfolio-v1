@@ -13,6 +13,8 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+
  :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -8717,8 +8719,17 @@
       height: auto;
     }
     .resume-header .picture {
-      width: 120px;
-      border-radius: 4px;
+      width: 210px;
+      border-radius: 50%;
     }
   }
   
+
+
+/* Custom CSS */
+
+@media (max-width: 768px) {
+  #resume-btn {
+    margin-top: 20px;
+  }
+}
