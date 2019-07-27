@@ -1,43 +1,33 @@
-<div class="container-contact100">
-    <div class="wrap-contact100">
-        <form class="contact100-form validate-form">
-            <span class="contact100-form-title">
-                Get in Touch
-            </span>
-
-            <div class="wrap-input100 validate-input" data-validate="Name is required">
-                <input class="input100" id="name" type="text" name="name" placeholder="Name">
-                <label class="label-input100" for="name">
-                    <span class="fas fa-user"></span>
-                </label>
+<div class="container mt-5 px-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
+              <h2>Get in Touch</h2>
             </div>
-
-            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                <input class="input100" id="email" type="text" name="email" placeholder="Email">
-                <label class="label-input100" for="email">
-                    <span class="fas fa-envelope"></span>
-                </label>
+        </div>
+        <div class="row mt-4">
+            <!-- col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3  -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <form name="contact"  method="POST" data-netlify="true">
+                    <div class="form-group">
+                        <!-- <label class="form-label" for="name">Your Name</label> -->
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+                    </div><br>                          
+                    <div class="form-group">
+                        <!-- <label class="form-label" for="email">Your Email</label> -->
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+                    </div><br>                      
+                    <div class="form-group">
+                        <!-- <label class="form-label" for="subject">Subject</label> -->
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+                    </div><br>                            
+                    <div class="form-group">
+                        <!-- <label class="form-label" for="message">Message</label> -->
+                        <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>                                 
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-start-order">Send Message</button>
+                    </div>
+                </form>
             </div>
-
-            <div class="wrap-input100 validate-input" data-validate = "Phone is required">
-                <input class="input100" id="phone" type="tel" name="phone" placeholder="Phone">
-                <label class="label-input100" for="phone">
-                    <span class="fas fa-phone"></span>
-                </label>
-            </div>
-
-            <div class="wrap-input100 validate-input" data-validate = "Message is required">
-                <textarea class="input100" name="message" placeholder="Your message..."></textarea>
-            </div>
-
-            <div class="container-contact100-form-btn">
-                <div class="wrap-contact100-form-btn">
-                    <div class="contact100-form-bgbtn"></div>
-                    <button class="contact100-form-btn">
-                        Send Email
-                    </button>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
+        </div>
+      </div>
